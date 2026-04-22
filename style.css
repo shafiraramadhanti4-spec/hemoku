@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+/* Page 1 */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; 
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 390px;
+    padding: 30px;
+    border-radius: 30px;
+    background: white;
+    text-align: center;
+    box-shadow: -3px 3px 10px rgba(255, 0, 0, 0.2);
+    border: 1px solid #E09B9B;
+    flex-shrink: 1;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(#FFD6D6 3px, transparent 3px);
+    background-size: 15px 15px;
+    z-index: -1;
+}
+
+.card h1 {
+    color: #C40000;
+    font-size: 36px;
+    margin: 5px 0 20px 0;
+    font-weight: 600;
+}
+
+.desc {
+    width: 360px;
+    line-height: 1.5;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    background: #C40000;
+    color: white;
+    cursor: pointer;
+}
+
+.logo-darah {
+    width: 80px;
+    height: auto;
+    margin-top: 12px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.menu-item {
+    background: #fff;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item img {
+    width: 25px;
+    height: auto;
+}
+
+/* Page 2 */
+.fitur {
+    margin-top: 90px;
+    padding-bottom: 60px;
+}
+
+.title {
+    color: #6D0808;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    width: 720px;
+    height: 600px;
+    margin-top: 50px;
+}
+
+.box {
+    background: #fff;
+    padding: 18px;
+    border-radius: 20px;
+    box-shadow: -8px 6px rgba(0, 0, 0, .09);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.box-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.box h2 {
+    background: #6D0808;
+    border-radius: 50%;
+    color: #F8CCCC;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.box h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #6D0808;
+}
+
+.kanan::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    /* background: #FF1010;
+    filter: blur(100px); */
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.hp {
+    width: 360px;
+    border-radius: 20px;
+    padding-top: 50px;
+}
+
+/* Page 3 */
+.privacy {
+    text-align: left;
+    position: relative;
+    margin-top: 90px;
+}
+
+.p-litle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 30px;
+    color: #B11226;
+}
+
+.privacy-card {
+    width: 650px;
+    height: 350px;
+    margin: auto;
+    background: #F2F2FF;
+    padding: 30px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.privacy-card p {
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.p-litle img {
+    width: 40px;
+    height: auto;
+}
+
+.privacy h5 {
+    text-align: center;
+    color: #3a3a3a;
+    margin-bottom: 30px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #383636;
+}
+
+.list img {
+    width: 16px;
+    height: auto;
+}
+
+.agree input {
+    gap: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #383636; 
+}
+
+.download-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 24px;
+    gap: 8px;
+}
+
+.btn-end {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 28px;      
+    background: #B11226;
+    color: white;
+    border: none;
+    border-radius: 12px;    
+    cursor: pointer;
+}
+
+.btn-end span {
+    font-size: 18px;
+    font-weight: 700;        
+}
+
+.btn-end img {
+    width: 24px;             
+    height: auto;
+}
+
+/* Teks kecil di bawah tombol */
+.info-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+    margin-left: 15px;     
+    font-size: 12px;
+    color: #000;             
+}
